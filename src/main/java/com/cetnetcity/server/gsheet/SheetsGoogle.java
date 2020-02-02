@@ -26,7 +26,7 @@ public class SheetsGoogle {
 
     private static String data = "";
 
-    private static final String APPLICATION_NAME = "Google Sheets API Java Quickstart";
+    private static final String APPLICATION_NAME = "CenterCity";
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
     private static final String TOKENS_DIRECTORY_PATH = "tokens";
 
@@ -34,8 +34,8 @@ public class SheetsGoogle {
      * Global instance of the scopes required by this quickstart.
      * If modifying these scopes, delete your previously saved tokens/ folder.
      */
-    private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS_READONLY);
-    private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
+    private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS);
+    private static final String CREDENTIALS_FILE_PATH = "/client_out.json";
 
     /**
      * Creates an authorized Credential object.
@@ -68,8 +68,8 @@ public class SheetsGoogle {
     public static String Method() throws IOException, GeneralSecurityException {
         // Build a new authorized API client service.
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
-        final String spreadsheetId = "1EuAKgGY5nT0a29XnSFrpOqcIOrkigdzMwIsBeqhXPyo";
-        final String range = "Test!A2:E";
+        final String spreadsheetId = "1gfd6BEggDRBaWc_TEODFDIWcNM0VtBpCW46V0Cc2oRI";
+        final String range = "CenterCity!A2:E";
         Sheets service = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
                 .setApplicationName(APPLICATION_NAME)
                 .build();
