@@ -7,6 +7,18 @@
     <groupId>com.centercity</groupId>
     <artifactId>com.centercity</artifactId>
     <version>1.0.0</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <packaging>war</packaging>
 
 
@@ -54,11 +66,6 @@
             <artifactId>google-api-services-sheets</artifactId>
             <version>v4-rev581-1.25.0</version>
         </dependency>
-
-
-
-
-
 
     </dependencies>
 </project>

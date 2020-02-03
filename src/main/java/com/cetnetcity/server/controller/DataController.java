@@ -17,5 +17,6 @@ public class DataController {
     @ResponseBody
     public String getData(ModelMap model) throws IOException, GeneralSecurityException {
         return com.cetnetcity.server.gsheet.SheetsGoogle.Method();
+
     }
 }
